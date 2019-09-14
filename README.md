@@ -23,30 +23,52 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit the `ANSWERS.md` file to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Why would you use class component over function components (removing hooks from the question)?
+
+
+    Class Components are used at the base of the application more as a foundation for the application itself, it can handle all the state holding and passit down to any of its components, a functional compononet is normally child of the class component and will pull its data from the Class but it can have functionality to change the state of the parent through inheritence
+
 - [ ] Name three lifecycle methods and their purposes.
+
+    onComponentDidMount() :: =>
+     is used right after the first render when the component that it is attached to mounts to the Virtual Dom
+
+     onComponenetDidUpdate() ::=>
+        is used to change something on the virtual dom when the state is changed.
+
+        componentWillUnmount() ::=>
+            is used when the compoennt is un-mounted usualy you would call the clean functions here
+ 
 - [ ] What is the purpose of a custom hook?
+
+    custom hooks allow us to be able to inject our own data at anytime by creating a hook that inherits another and overrideing it and returning the result 
+
 - [ ] Why is it important to test our apps?
+
+    testing apps is great because it :
+        finds bugs faster,
+        shows us edge cases,
+        costs less over time
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on Github.
-- [ ] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
-- [ ] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
-- [ ] Run `yarn` to download dependencies.
-- [ ] Run the server using `yarn start` or `node server.js`.
-- [ ] In a separate terminal cd into the `client` folder and run `yarn install` to download dependencies.
-- [ ] Still inside the `client` folder run `yarn start` to run the client application.
-- [ ] Implement the project on this Branch, **committing progress & changes often.**
-- [ ] Push commits: `git push origin <firstName-lastName>`.
+- [X] Create a forked copy of this project.
+- [X] Add TL as collaborator on Github.
+- [X] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
+- [X] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
+- [X] Run `yarn` to download dependencies.
+- [X] Run the server using `yarn start` or `node server.js`.
+- [X] In a separate terminal cd into the `client` folder and run `yarn install` to download dependencies.
+- [X] Still inside the `client` folder run `yarn start` to run the client application.
+- [X] Implement the project on this Branch, **committing progress & changes often.**
+- [X] Push commits: `git push origin <firstName-lastName>`.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
-- [ ] Add your Project Manager as a Reviewer on the Pull-request.
-- [ ] PM then will count the HW as done by merging the branch back into master.
+- [X] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [X] Add your Project Manager as a Reviewer on the Pull-request.
+- [X] PM then will count the HW as done by merging the branch back into master.
 
 ## Minimum Viable Product
 
